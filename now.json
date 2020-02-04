@@ -1,0 +1,29 @@
+{
+  "name": "underyourhood",
+  "version": 2,
+  "builds": [
+    { "src": "*.php", "use": "now-php",
+      "config": {
+        "php.ini": {
+          "memory_limit": "128M",
+          "post_max_size": "32M"
+        }
+      }},
+    { "src": "incz/*.php", "use": "now-php",
+      "config": {
+        "php.ini": {
+          "memory_limit": "128M",
+          "post_max_size": "32M"
+        }
+      }},
+    { "src": "css/**", "use": "@now/static" },
+    { "src": "fonts/**", "use": "@now/static" },
+    { "src": "js/**", "use": "@now/static" },
+    { "src": "img/**", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/hi", "dest": "/hi.php" },
+    { "src": "/i", "dest": "/index.php" },
+    { "src": "/", "dest": "/index.php" }
+  ]
+}

@@ -1,0 +1,1055 @@
+/***************************************************
+*			Melodic Crypter Development			   *
+*			www.underyourhood.info  			   *
+*			Real Ip, ISP						   *
+*			Comapany Name						   *
+*												   *
+/***************************************************/
+
+/* Defaul Screen - Mobile */
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    -webkit-text-size-adjust: none; 
+    background: url(../img/uyh-background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #CDD7CE;
+    font-size: .6ems;
+}
+
+/* main configuration for the site - mobile view */
+#bodyContainer {
+    width: 100%;
+    height: 600px;
+    padding: 40px;
+    text-align: center;
+    margin: 0px auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#opacityBackground {
+    display: block;
+    height: 120%;
+    width: 100%;
+    opacity: .1;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+#developerBackground {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 12000;
+}
+
+#opacityBackgroundAnnouncement {
+    display: none;
+    height: 120%;
+    width: 100%;
+    opacity: 0;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 13000;
+}
+
+nav {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 52px;
+    width: 52px;
+    background-color: hsla(17, 100%, 60%, 0.82);
+    z-index: 11000;
+    border-radius: 43px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#pointedMenu {
+    position: absolute;
+    top: 10px;
+    z-index: 10000;
+    margin: 0px;
+    left: 59px;
+}
+
+#pointedMenu #pointedMenuP {
+    font-size: 1.4rem;
+    color: #ea810d;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    line-height: 0px;
+}
+
+#pointedMenuP:hover {
+    cursor: pointer;
+}
+
+#navExtension {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 56px;
+    height: 56px;
+    background-color: #486a4d;
+    z-index: 10000;
+    border: 3px solid #ffffff;
+    transform: rotate(1deg);
+    border-radius: 1px 33px;
+}
+
+#navExtension2 {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    right: 0px;
+    top: 0px;
+    background-color: white;
+    z-index: 9800;
+}
+
+#navImg {
+    position: absolute;
+    left: -1px;
+    top: 7px;
+    margin: 0px auto;
+    width: 54px;
+}
+
+#navImg img {
+    width: 100%;
+    border-radius: 60%;
+}
+
+#siteTitleSection {
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    z-index: 9000;
+    letter-spacing: 3px;
+    word-spacing: -5px;
+}
+
+#siteTitileText {
+    font-size: 1.4em;
+    color: white;
+    font-family: six-caps;
+    text-shadow: 1px 1px #868686;
+}
+
+#mcLogoSection {
+    position: absolute;
+    top: -1px;
+    right: 14px;
+    width: 40px;
+    background-color: #486a4d;
+    text-align: center;
+    height: 34px;
+    opacity: .5;
+    border: 1px dashed white;
+}
+
+#mcLogoSection:hover {
+    opacity: 1;
+}
+
+#mcLogoSection a {
+    text-decoration: none;
+}
+
+#mcLogoSection a:hover {
+    cursor: pointer;
+}
+
+#mcLogoSection #mc-logo {
+    width: 100%;
+    position: relative;
+    top: 7px;
+    right: -1px;
+}
+
+/* design for Main Divs - IP divs - mobile view */
+ #finalOutputDivLarge {
+    display: none;
+}
+
+#finalOutputDiv {
+    display: block;
+    z-index: 1000;
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: -76px;
+    left: 0px;
+    margin-top: 44px;
+}
+#finalOutputDiv p {
+    font-family: fredericka-the-great;
+    font-size: .9em;
+    color: white;
+}
+
+#finalOutputDivLargeIPtexts {
+        display: none;
+}
+
+#realIPText {
+    font-size: 1.4em;
+    position: relative;
+    top: -62px;
+}
+
+#proxyIPText {
+    font-size: 1.4em;
+    position: relative;
+    top: -38px;
+}
+
+#webHostIPText {
+    font-size: 1.4em;
+    position: relative;
+    top: -13px;
+}
+
+#realIpTextDiv {
+    position: relative;
+    left: 0px;
+    top: 48px;
+    height: 32px;
+    background-color: #ffe834;
+    z-index: 0;
+    opacity: .8;
+    margin: 0 auto;
+    display: block;
+    width: 178px;
+    border-radius: 16px;
+}
+
+#proxyIpTextDiv {
+    position: relative;
+    left: 0px;
+    top: 78px;
+    height: 34px;
+    /*background-color: rgba(186, 255, 75, 0.52);*/
+    background-color: rgb(255, 89, 22);
+    z-index: 0;
+    opacity: .8;
+    margin: 0 auto;
+    display: block;
+    width: 178px;
+    border-radius: 16px;
+}
+
+#webHostIpTextDiv {
+    position: relative;
+    left: 0px;
+    top: 108px;
+    height: 34px;
+    /*background-color: rgb(255, 89, 22);*/
+    background-color: rgb(7, 183, 214);
+    z-index: 0;
+    opacity: 1;
+    margin: 0 auto;
+    display: block;
+    width: 178px;
+    border-radius: 16px;
+}
+
+#IPtitles {
+    position: relative;
+    top: -239px;
+    left: -23px;
+}
+
+#IPtitles li {
+    display: inline;
+    
+}
+
+#IPtitles li p {
+    font-family: league-gothic;
+    font-size: .7em;
+    line-height: 0px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#Iptitles1 {
+    position: relative;
+    top: 4px;
+}
+
+#Iptitles2 {
+    position: relative;
+    top: 57px;
+}
+
+#Iptitles3 {
+    position: relative;
+    top: 110px;
+}
+
+/* design for First Block - mobile view */
+#firstBlock {
+    position: relative;
+    top: -110px;
+    left: 0px;
+    margin: 0px auto;
+    height: 140px;
+    width: 100%;
+}
+
+#firstBlock p {
+    font-family: fredericka-the-great;
+    font-size: .9em;
+    color: white;
+    margin-top: -2px;
+}
+
+#firstBlock #box1aText, #firstBlock #box1bText, #firstBlock #box1cText {
+    font-family: fredericka-the-great;
+    font-size: .9em;
+    color: white;
+}
+
+.firstBlockBox {
+    display: inline-block;
+}
+
+#box1a {
+    width: 32%;
+}
+
+#box1b {
+    width: 32%;
+}
+
+#box1c {
+    width: 32%;
+}
+
+.boxImagesContainer {
+    width: 40px;
+    margin: 0px auto;
+    position: relative;
+    top: 10px;
+}
+
+#box1aImg, #box1bImg, #box1cImg {
+    width: 100%;
+}
+
+/* design for Second Block - mobile view */
+#secondBlockMobile {
+    position: relative;
+    top: -142px;
+    left: 0px;
+    margin: 0px auto;
+    height: 140px;
+    width: 100%;
+}
+
+#secondBlockMobile .showOnMobile {
+    font-family: fredericka-the-great;
+    font-size: .7em;
+    color: white;
+    margin-top: 4px;
+}
+
+#secondBlockMobile .hideOnMobile {
+    display: none;
+    font-family: fredericka-the-great;
+    font-size: .9em;
+    color: white;
+    margin-top: 4px;
+}
+
+#secondBlockMobile #box2aText, #secondBlockMobile #box2bText, #secondBlockMobile #box2cText {
+    font-family: fredericka-the-great;
+    font-size: .9em;
+    color: white;
+}
+ 
+.secondBlockBoxMobile {
+    display: inline-block;
+}
+
+#boxMoba {
+    width: 32%;
+}
+
+#boxMobb {
+    width: 32%;
+}
+ 
+#boxMobc {
+    width: 32%;
+}
+
+.secondBlockMobileImageDiv {
+    width: 50px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.secondBlockMobileImageDiv img {
+    width: 100%;
+}
+
+/* hidden in Mobile view */
+#secondBlock {
+    display: none;
+    position: relative;
+    top: -142px;
+    left: 0px;
+    margin: 0px auto;
+    height: 140px;
+    width: 100%;
+}
+
+#secondBlock p {
+    font-family: fredericka-the-great;
+    font-size: .9em;
+    color: white;
+    margin-top: 6px;
+}
+
+#secondBlock #box2aText, #secondBlock #box2bText, #secondBlock #box2cText {
+    font-family: fredericka-the-great;
+    font-size: .9em;
+    color: white;
+}
+
+.secondBlockBox {
+    display: inline-block;
+}
+
+#box2a {
+    width: 33%;
+}
+
+#box2b {
+    width: 32%;
+}
+
+#box2c {
+    width: 32%;
+}
+
+/* design for Third Block - Flags and Currency Symbol - mobile view */
+#thirdBlock {
+    position: absolute;
+    width: 17px;
+    top: 2px;
+    margin: 0px auto;
+    opacity: 0.7;
+    z-index: 10000;
+    right: 3px;
+}
+
+#thirdBlock img {
+    width: 100%;
+    border-radius: 2% 50%;
+    border: 1px solid rgb(255, 255, 255);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+#currencySymbol{
+    font-size: .9em;
+    color: #ea810d;
+    position: absolute;
+    top: 0px;
+    right: 24px;
+}
+
+#announcement {
+    /*display: none;
+    position: fixed;
+    height: 30px;
+    bottom: 0px;
+    background-color: rgb(120, 163, 82);
+    width: 100%;*/
+    
+    display: none;
+    position: fixed;
+    height: 273px;
+    top: 23%;
+    background-color: rgb(120, 163, 82);
+    width: 72%;
+    left: 14%;
+    z-index: 15000;
+}
+
+#announcement p {
+    font-family: league-gothic;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 8px;
+    color: white;
+}
+
+#closeAnnouncement {
+    display: none;
+    position: fixed;
+    height: 30px;
+    top: 23%;
+    right: 16%;
+    font-family: league-gothic;
+    font-size: 1.1em;
+    margin-top: 8px;
+    color: white;
+    z-index: 10000;
+}
+
+#closeAnnouncement:hover {
+    cursor: pointer;
+}
+
+#greenArrow {
+    display: none;
+    position: fixed;
+    right: 0px;
+    bottom: 8px;
+    width: 30px;
+}
+
+#greenArrow img {
+    width: 100%;
+}
+
+#greenArrow img:hover {
+    cursor: pointer;
+}
+
+#developerInfo {
+    display: none;
+    position: relative;
+    margin: 0px auto;
+    top: -440px;
+    z-index: 12000;
+    left: 10px;
+}
+
+#developerInfo #developerTitle {
+    font-family: league-gothic;
+    font-size: 1.2em;
+    text-align: center;
+    color: #d2d1d0;
+    letter-spacing: 1px;
+}
+
+#developerInfo #developerClose {
+    font-family: league-gothic;
+    font-size: 1.4em;
+    text-align: center;
+    color: #f8be21;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+#developerInfo #developerImgHolder {
+    width: 180px;
+    margin: 0px auto;
+}
+
+#developerInfo #developerImgHolder a {
+    text-decoration: none;
+}
+
+#developerInfo #developerImgHolder a img {
+    width: 100%;
+}
+
+#developerInfo #developerClose {
+    display: none;
+    position: absolute;
+    top: -140px;
+    right: 34px;
+}
+
+#developerInfo #developerClose:hover {
+    cursor: pointer;
+}
+/* used for Mobile responsiveness when phone is rotated - mobile view */
+#rotatePhone {
+    display: none;
+    position: relative;
+    height: 100%;
+    margin: 0px auto;
+    font-family: league-gothic;
+    font-size: 1.2em;
+    color: gray;
+}
+
+/* design for Footer - mobile view */
+footer {
+    
+}
+
+
+/* design for high resolution device - mobile view */
+@media screen and (-webkit-device-pixel-ratio:3) {
+    #bodyContainer {
+        -webkit-overflow-scrolling: touch;
+    }
+    #mcLogoSection {
+        opacity: 1;
+    }
+    #finalOutputDiv p {
+        font-weight: bold;
+    }
+    
+     #finalOutputDivLarge {
+        display: none;
+    }
+    
+    #secondBlockMobile .showOnMobile {
+        display: none;
+    }
+
+    #secondBlockMobile .hideOnMobile {
+        display: block;
+    }
+    
+    #finalOutputDiv {
+        top: -56px;
+    }
+    
+    #IPtitles {
+        top: -220px;
+    }
+    
+    #firstBlock {
+        top: -94px;
+    }
+    
+    #secondBlockMobile {
+        top: -126px;
+    }
+    
+    #finalOutputDivLargeIPtexts {
+        display: none;
+    }
+    
+}
+
+
+/* Responsive - Phablet to Tablet : min-width is actually 550px, but due to some design changed to 460px */
+@media screen and (min-width : 460px) and (max-width : 800px) {
+    #secondBlockMobile .showOnMobile {
+        display: none;
+    }
+
+    #secondBlockMobile .hideOnMobile {
+        display: block;
+    }
+    
+    #finalOutputDiv {
+        top: -56px;
+    }
+    
+    #finalOutputDivLarge {
+        display: none;
+    }
+    
+    #IPtitles {
+        top: -220px;
+    }
+    
+    #firstBlock {
+        top: -94px;
+    }
+    
+    #secondBlockMobile {
+        top: -126px;
+    }
+    
+    #finalOutputDivLargeIPtexts {
+        display: none;
+    }
+}
+
+
+
+
+/* Responsive - iPad 2, 3, 4, and Pro */
+@media screen and (min-width : 801px) and (max-width : 1366px) {
+    #secondBlockMobile .showOnMobile {
+        display: none;
+    }
+
+    #secondBlockMobile .hideOnMobile {
+        display: block;
+    }
+    
+    #finalOutputDiv {
+        display: none;
+    }
+    
+    #firstBlock {
+        top: 4px;
+    }
+    
+    #secondBlockMobile {
+        top: 30px;
+    }
+    
+    #finalOutputDivLarge {
+        display: block;
+        z-index: 1000;
+        height: auto;
+        width: 100%;
+        position: relative;
+        top: 110px;
+        left: 0px;
+        margin-top: 44px;
+    }
+    
+    #finalOutputDivLarge .realIpTextDivInline {
+       display: inline-block;
+    }
+    
+    #finalOutputDivLargeIPtexts {
+        display: block;
+    }
+    
+    #finalOutputDivLargeIPtexts p {
+        font-family: fredericka-the-great;
+        font-size: .9em;
+        color: white;
+    }
+
+    #realIPText {
+        font-size: 1.4em;
+        position: relative;
+        top: 63px;
+        left: -263px;
+        z-index: 10000;
+    }
+
+    #proxyIPText {
+        font-size: 1.4em;
+        position: relative;
+        top: 24px;
+        z-index: 10000;
+    }
+
+    #webHostIPText {
+        font-size: 1.4em;
+        position: relative;
+        top: -15px;
+        left: 263px;
+        z-index: 10000;
+    }
+
+    #realIpTextDiv {
+        position: relative;
+        left: -80px;
+        top: 0px;
+        height: 32px;
+        background-color: #ffe834;
+        z-index: 0;
+        opacity: .8;
+        margin: 0 auto;
+        display: block;
+        width: 178px;
+        border-radius: 16px;
+    }
+
+    #proxyIpTextDiv {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        height: 34px;
+        /*background-color: rgba(186, 255, 75, 0.52);*/
+        background-color: rgb(255, 89, 22);
+        z-index: 0;
+        opacity: .8;
+        margin: 0 auto;
+        display: block;
+        width: 178px;
+        border-radius: 16px;
+    }
+
+    #webHostIpTextDiv {
+        position: relative;
+        left: 80px;
+        top: 0px;
+        height: 34px;
+        /*background-color: rgb(255, 89, 22);*/
+        background-color: rgba(7, 183, 214, 0.86);
+        z-index: 0;
+        opacity: 1;
+        margin: 0 auto;
+        display: block;
+        width: 178px;
+        border-radius: 16px;
+    }
+
+    #IPtitles {
+        position: relative;
+        left: -23px;
+        top: -73px;
+    }
+
+    #IPtitles li {
+        display: inline-block;
+
+    }
+
+    #IPtitles li p {
+        font-family: league-gothic;
+        font-size: .8em;
+        line-height: 0px;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    #Iptitles1 {
+        position: relative;
+        top: -35px;
+        left: -220px;
+    }
+
+    #Iptitles2 {
+        position: relative;
+        top: -35px;
+    }
+
+    #Iptitles3 {
+        position: relative;
+        top: -35px;
+        left: 220px;
+    }
+    
+    #developerInfo #developerTitle {
+        font-size: 1.5em; 
+        margin-left: -20px;
+    }
+    
+    #developerInfo #developerImgHolder {
+        width: 380px;
+    }
+}
+
+
+
+
+/* Responsive - Desktop HD */
+@media screen and (min-width : 1367px) and (max-width : 2560px) {
+    #secondBlockMobile .showOnMobile {
+        display: none;
+    }
+
+    #secondBlockMobile .hideOnMobile {
+        display: block;
+    }
+    
+    #finalOutputDiv {
+        display: none;
+    }
+    
+    #firstBlock {
+        top: 60px;
+    }
+    
+    #secondBlockMobile {
+        top: 140px;
+    }
+
+    #finalOutputDivLarge {
+        display: block;
+        z-index: 1000;
+        height: auto;
+        width: 100%;
+        position: relative;
+        top: 110px;
+        left: 0px;
+        margin-top: 44px;
+    }
+    
+    #finalOutputDivLarge .realIpTextDivInline {
+       display: inline-block;
+    }
+    
+    #finalOutputDivLargeIPtexts {
+        display: block;
+    }
+    
+    #finalOutputDivLargeIPtexts p {
+        font-family: fredericka-the-great;
+        font-size: .9em;
+        color: white;
+    }
+
+    #realIPText {
+        font-size: 1.4em;
+        position: relative;
+        top: 63px;
+        left: -263px;
+        z-index: 10000;
+    }
+
+    #proxyIPText {
+        font-size: 1.4em;
+        position: relative;
+        top: 24px;
+        z-index: 10000;
+    }
+
+    #webHostIPText {
+        font-size: 1.4em;
+        position: relative;
+        top: -15px;
+        left: 263px;
+        z-index: 10000;
+    }
+
+    #realIpTextDiv {
+        position: relative;
+        left: -80px;
+        top: 0px;
+        height: 32px;
+        background-color: #ffe834;
+        z-index: 0;
+        opacity: .8;
+        margin: 0 auto;
+        display: block;
+        width: 178px;
+        border-radius: 16px;
+    }
+
+    #proxyIpTextDiv {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        height: 34px;
+        /*background-color: rgba(186, 255, 75, 0.52);*/
+        background-color: rgb(255, 89, 22);
+        z-index: 0;
+        opacity: .8;
+        margin: 0 auto;
+        display: block;
+        width: 178px;
+        border-radius: 16px;
+    }
+
+    #webHostIpTextDiv {
+        position: relative;
+        left: 80px;
+        top: 0px;
+        height: 34px;
+        /*background-color: rgb(255, 89, 22);*/
+        background-color: rgba(7, 183, 214, 0.88);
+        z-index: 0;
+        opacity: 1;
+        margin: 0 auto;
+        display: block;
+        width: 178px;
+        border-radius: 16px;
+    }
+
+    #IPtitles {
+        position: relative;
+        top: 0px;
+        left: -23px;
+    }
+
+    #IPtitles li {
+        display: inline-block;
+
+    }
+
+    #IPtitles li p {
+        font-family: league-gothic;
+        font-size: .9em;
+        line-height: 0px;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    #Iptitles1 {
+        position: relative;
+        top: -35px;
+        left: -220px;
+    }
+
+    #Iptitles2 {
+        position: relative;
+        top: -35px;
+    }
+
+    #Iptitles3 {
+        position: relative;
+        top: -35px;
+        left: 220px;
+    }
+    
+    .boxImagesContainer {
+        width: 60px;
+    }
+    
+    .secondBlockMobileImageDiv {
+        width: 70px;
+    }
+    
+    #developerInfo #developerTitle {
+        font-size: 1.5em; 
+        margin-left: -20px;
+    }
+    
+    #developerInfo #developerImgHolder {
+        width: 380px;
+    }
+}
+
+
+
+
+
+
+/* Responsive - Rotate Phone */
+@media screen and (min-height : 100px) and (max-height : 420px) and (min-width : 0px) and (max-width : 2000px) and (min-resolution: 120dpi) {
+ 
+    #rotatePhone {
+        display: block;
+        position: relative;
+        width: 24%;
+        margin: 10% auto;
+    }
+    
+    .hideAll {
+        display: none;
+    }
+
+}
