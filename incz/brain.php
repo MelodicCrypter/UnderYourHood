@@ -29,20 +29,15 @@
     // That's why GeoPlugin and IP-API are used.
     $geo = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='));
 
-    if(!$visitorRealIP)
-    {
-        $visitorRealIP = $geo['geoplugin_request'];
-    } else {
+    if(!$visitorRealIP) {
         $visitorRealIP = "NA";
     }
 
-    if(!$proxyPublicIP)
-    {
+    if(!$proxyPublicIP) {
         $proxyPublicIP = "NA";
     }
 
-    if(!$webHostIP)
-    {
+    if(!$webHostIP) {
         $webHostIP = "NA";
     }
     
