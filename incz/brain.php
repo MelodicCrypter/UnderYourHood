@@ -9,6 +9,9 @@
     // Host's IP
     $webHostIP = gethostbyname(gethostname());
 
+    // Proxy
+    $proxyPublicIP = filter_var(getenv('REMOTE_ADDR'), FILTER_VALIDATE_IP, FILTER_FLAG_IPV4);
+
     // "Real" IP
     $visitorRealIP;
     if(!empty($_SERVER['HTTP_CLIENT_IP'])) {
@@ -21,14 +24,7 @@
         $visitorRealIP = filter_var(getenv('HTTP_X_REAL_IP'), FILTER_VALIDATE_IP, FILTER_FLAG_IPV4);
     }
 
-    // Proxy
-    $proxyPublicIP = filter_var(getenv('REMOTE_ADDR'), FILTER_VALIDATE_IP, FILTER_FLAG_IPV4);
-
-    // BUT if plain PHP does not work, let us use GeoPlugin API
-    // Actually, we can use IP-API below alone, but we don't want to request too much using free-access API
-    // That's why GeoPlugin and IP-API are used.
-    $geo = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='));
-
+    // Defaults
     if(!$visitorRealIP) {
         $visitorRealIP = "NA";
     }
@@ -40,10 +36,11 @@
     if(!$webHostIP) {
         $webHostIP = "NA";
     }
-    
+
+    // GeoPlugin
+    $geo = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$visitorRealIP));
     // IP-API API variables
     $query = unserialize(file_get_contents('http://ip-api.com/php/'.$visitorRealIP));
-
     // GET the User String Agent
     $agent = $_SERVER['HTTP_USER_AGENT'];
 

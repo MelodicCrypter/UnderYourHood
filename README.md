@@ -5,4 +5,4 @@ A web app that will show your Host/Proxy IP address, Browser name, OS version, I
 
 Deployed on Zeit.
 
-[Under Your Hood app](https://underyourhood.now.sh)
+[Under Your Hood app](https://underyourhood.herokuapp.com/)
