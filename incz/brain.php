@@ -27,7 +27,7 @@
     // BUT if plain PHP does not work, let us use GeoPlugin API
     // Actually, we can use IP-API below alone, but we don't want to request too much using free-access API
     // That's why GeoPlugin and IP-API are used.
-    $geo = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$proxyPublicIP));
+    $geo = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='));
 
     if(!$visitorRealIP)
     {
